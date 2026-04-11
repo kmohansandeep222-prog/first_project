@@ -1,9 +1,0 @@
-.img-style
-{
-    width:"auto";
-    height: 500px;
-}
-body {
-             background-image: url('trip_pictures/bg_image.jpg');
-             background-size: cover;
-        }
