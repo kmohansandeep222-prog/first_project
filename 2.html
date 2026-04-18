@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://googleapis.com');
+
+        body {
+            background-color: #fdf5e6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .card-container {
+            background-color: #fffaf0;
+            width: 550px;
+            padding: 40px;
+            border: 2px solid #5d1916;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            position: relative;
+            text-align: center;
+            color: #5d1916;
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* Decorative Borders */
+        .card-container::before {
+            content: "";
+            position: absolute;
+            top: 10px; left: 10px; right: 10px; bottom: 10px;
+            border: 1px solid #5d1916;
+            pointer-events: none;
+        }
+
+        /* Corner Icons (Placeholders for the patterns) */
+        .corner {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            font-size: 24px;
+        }
+        .top-right { top: 15px; right: 15px; transform: rotate(90deg); }
+        .top-left { top: 15px; left: 15px; transform: rotate(-90deg); }
+        .bottom-left { bottom: 15px; left: 15px; transform: rotate(-90deg); }
+        .bottom-right { bottom: 15px; right: 15px; transform: rotate(90deg); }
+        /* Top Sanskrit Line */
+        .sanskrit-header {
+            display: flex;
+            justify-content: space-around;
+            font-style: italic;
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+
+        /* Ganesha Image Placeholder */
+        .ganesha-icon {
+            width: 80px;
+            margin: 0 auto 10px;
+            display: block;
+        }
+
+        h1.wedding-invitation {
+            font-family: 'Great Vibes', cursive;
+            font-size: 3em;
+            margin: 10px 0;
+            font-weight: normal;
+        }
+
+        .solicit-text {
+            font-style: italic;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .names {
+            font-family: 'Great Vibes', cursive;
+            font-size: 3.2em;
+            margin: 5px 0;
+        }
+
+        .prefix {
+            font-family: 'Playfair Display', serif;
+            font-size: 0.4em;
+            vertical-align: middle;
+            font-style: italic;
+        }
+
+        .parent-info {
+            font-style: italic;
+            font-size: 0.9em;
+            margin-bottom: 25px;
+        }
+
+        .details-section {
+            margin: 20px 0;
+        }
+
+        .details-label {
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .venue-info {
+            font-weight: bold;
+            line-height: 1.4;
+        }
+
+        .hosts {
+            margin-top: 30px;
+            font-size: 1.3em;
+            font-weight: bold;
+        }
+
+        .footer-note {
+            margin-top: 30px;
+            border-top: 1px solid #5d1916;
+            padding-top: 15px;
+            font-style: italic;
+        }
+
+        .couple-illustration {
+            width: 100px;
+            float: left;
+            margin-top: -20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="card-container">
+        <!-- Decoration placeholders -->
+        <div class="corner top-right">⚜</div>
+        <div class="corner top-left">⚜</div>
+        <div class="corner bottom-right">⚜</div>
+        <div class="corner bottom-left">⚜</div>
+        
+        <div class="sanskrit-header">
+            <span>Srirasthu</span>
+            <span>Shubhamasthu</span>
+            <span>Avighnamasthu</span>
+        </div>
+
+        <!-- Placeholder for Ganesha Image -->
+        <img src="images/ganesh.jpg" alt="Ganesha" class="ganesha-icon">
+
+        <h1 class="wedding-invitation">Wedding Invitation</h1>
+
+        <p class="solicit-text">
+            We solicit your gracious presence with family & friends on the<br>
+            auspicious occasion of the marriage of our only son
+        </p>
+
+        <div class="names">
+            <span class="prefix">Chi.</span> Shivaji Varma
+        </div>
+        
+        <div style="font-style: italic; margin: 10px 0;">with</div>
+
+        <div class="names">
+            <span class="prefix">Chi. La. Sow.</span> Sindhu
+        </div>
+
+        <div class="parent-info">
+            (Only D/o. Sri Sanaboina Venkateshwar Rao & Smt. Lakshmi)
+        </div>
+
+        <div class="details-section">
+            <span class="details-label">Sumuhurtham:</span>
+            On Wednesday, 8th April 2026, at 08-21 p.m.<br>
+            "Thula Lagnam"
+        </div>
+
+        <div class="details-section">
+            <span class="details-label">Venue:</span>
+            <div class="venue-info">
+                Sri Rama Sahitha Satya Narayana Swamy Temple<br>
+                Nowduru Center, Veeravasaram (M), W.G. Dist.
+            </div>
+        </div>
+
+        <div class="details-section" style="font-weight: bold;">
+            Dinner : 7-00 p.m. onwards
+        </div>
+
+        <!-- Placeholder for Couple Illustration -->
+        <img src="https://icons8.com" alt="Couple" class="couple-illustration">
+
+        <div class="hosts">
+            Sri Chellaboina Hanumantha Rao<br>
+            Smt. Chellaboina Baby Sujatha
+        </div>
+
+        <div class="footer-note">
+            You are cordially invited to my mama's wedding - Dhriti<br>
+            <small>With best compliments from: Near & Dear</small>
+        </div>
+    </div>
+
+</body>
+</html>
